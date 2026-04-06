@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gateway to Future</title>
+  <style>
+    :root{--bg:#f4f8ff;--card:#ffffff;--text:#13203a;--muted:#5d6b86;--blue:#1e5eff;--blue2:#0f3fb8;--line:#dbe6ff;--green:#12a36a;--shadow:0 12px 30px rgba(20,60,140,.08)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+    a{text-decoration:none;color:inherit} .wrap{max-width:1180px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;z-index:20;background:rgba(244,248,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .top{display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:900;font-size:1.2rem;color:var(--blue2)}
+    nav{display:flex;flex-wrap:wrap;gap:10px}.navbtn{padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;cursor:pointer;font-weight:700}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:20px;align-items:stretch;padding:24px 0 8px}
+    .panel,.card,.faq,.contact,.calc,.step{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}
+    .panel{padding:26px;background:linear-gradient(180deg,#fff,#f7fbff)} .card,.faq,.contact,.calc,.step{padding:18px}
+    .tag{display:inline-block;padding:7px 11px;border-radius:999px;background:#edf3ff;color:var(--blue2);font-size:.84rem;font-weight:800}
+    h1{font-size:clamp(2.1rem,4vw,3.8rem);line-height:1.05;margin:.4rem 0 1rem} h2{margin:0 0 12px;font-size:1.55rem} h3{margin:0 0 8px}
+    .lead{font-size:1.05rem;color:var(--muted);max-width:64ch}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:14px;font-weight:800;border:1px solid var(--line);background:#fff;cursor:pointer}
+    .btn.primary{background:var(--blue);color:#fff;border-color:var(--blue)} .btn.whatsapp{background:#eafff4;border-color:#c8efd9;color:#0a7a50}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;text-align:center}
+    .stat strong{display:block;font-size:1.25rem;color:var(--blue2)}
+    .section{padding:14px 0 2px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.muted{color:var(--muted)}
+    .pillrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.pill{padding:8px 12px;border-radius:999px;background:#f3f7ff;border:1px solid var(--line);font-size:.92rem}
+    details{border-top:1px solid var(--line);padding:12px 0} details:first-of-type{border-top:none} summary{cursor:pointer;font-weight:800}
+    label{display:block;font-weight:800;margin:10px 0 6px} input,select,textarea{width:100%;padding:12px 14px;border:1px solid #cad8fb;border-radius:12px;font:inherit;background:#fff}
+    textarea{min-height:110px;resize:vertical} .three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .pages{display:none}.pages.active{display:block} .note{font-size:.92rem;color:var(--muted)} footer{padding:18px 0 32px;color:var(--muted);text-align:center}
+    .course{display:flex;flex-direction:column;gap:8px}.badge{display:inline-block;width:max-content;padding:6px 10px;border-radius:999px;background:#edf3ff;color:var(--blue2);font-size:.82rem;font-weight:800}
+    table{width:100%;border-collapse:collapse} th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top} th{background:#f2f6ff}
+    @media (max-width:920px){.hero,.grid,.three,.stats{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <div class="brand">Gateway to Future</div>
+    <nav>
+      <button class="navbtn" onclick="showPage('home')">Home</button>
+      <button class="navbtn" onclick="showPage('german')">German Classes</button>
+      <button class="navbtn" onclick="showPage('visa')">Visa Counseling</button>
+      <button class="navbtn" onclick="showPage('studienkolleg')">Studienkolleg</button>
+      <button class="navbtn" onclick="showPage('contact')">Contact</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <section id="home" class="pages active">
+    <div class="hero">
+      <div class="panel">
+        <span class="tag">German education support for Indian students</span>
+        <h1>Learn German, prepare for Studienkolleg, and plan your Germany journey with confidence.</h1>
+        <p class="lead">Gateway to Future helps students with German language classes, Germany study pathways, visa counseling, and structured preparation for life and study in Germany.</p>
+        <div class="cta">
+          <a class="btn primary" href="#" onclick="showPage('contact')">Book Consultation</a>
+          <a class="btn whatsapp" href="https://wa.me/4915000000000" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>A1-C1</strong><span>German support</span></div>
+          <div class="stat"><strong>3</strong><span>Main service areas</span></div>
+          <div class="stat"><strong>Berlin</strong><span>Based in Germany</span></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h2 style="margin-top:0">Services</h2>
+        <div class="pillrow">
+          <span class="pill">German Classes</span><span class="pill">Visa Counseling</span><span class="pill">Studienkolleg Guidance</span><span class="pill">Application Support</span><span class="pill">Interview Prep</span><span class="pill">Document Checklist</span>
+        </div>
+        <p class="note" style="margin-top:14px">Built for students who want a clear, professional route from language learning to studying in Germany.</p>
+      </div>
+    </div>
+    <div class="section grid">
+      <div class="card"><h3>German Classes</h3><p class="muted">Live online support from beginner to advanced level with structured learning.</p></div>
+      <div class="card"><h3>Visa Counseling</h3><p class="muted">Guidance on admissions, financial proof, APS, blocked account, and appointments.</p></div>
+      <div class="card"><h3>Studienkolleg</h3><p class="muted">Help choosing the right course path and preparing for entrance exams.</p></div>
+    </div>
+    <div style="height:16px"></div>
+    <div class="faq">
+      <h2>FAQ</h2>
+      <details><summary>Do I need German for Germany study?</summary><p class="muted">Many study paths require German, especially Studienkolleg and German-taught programs.</p></details>
+      <details><summary>Can this app be used as a real landing page?</summary><p class="muted">Yes. It is a single-file app and can run by opening the HTML file in a browser.</p></details>
+      <details><summary>What should I replace?</summary><p class="muted">Update the WhatsApp number, email, and any pricing or service details to match your business.</p></details>
+    </div>
+  </section>
+
+  <section id="german" class="pages">
+    <div class="section"><h2>German Classes</h2><p class="muted">Choose the level that fits your current ability and study goal.</p></div>
+    <div class="grid">
+      <div class="card course"><span class="badge">A1</span><h3>Beginner foundation</h3><p class="muted">Alphabet, greetings, sentence basics, and first speaking practice.</p><p><strong>Fee:</strong> ₹7,999</p></div>
+      <div class="card course"><span class="badge">A2</span><h3>Elementary level</h3><p class="muted">Daily communication, grammar growth, and listening practice.</p><p><strong>Fee:</strong> ₹9,999</p></div>
+      <div class="card course"><span class="badge">B1</span><h3>Intermediate level</h3><p class="muted">Exam-focused reading, writing, speaking, and grammar.</p><p><strong>Fee:</strong> ₹12,999</p></div>
+    </div>
+    <div style="height:16px"></div>
+    <div class="grid">
+      <div class="card course"><span class="badge">B2</span><h3>Advanced preparation</h3><p class="muted">Academic language and stronger exam preparation.</p><p><strong>Fee:</strong> ₹15,999</p></div>
+      <div class="card course"><span class="badge">C1</span><h3>Professional fluency</h3><p class="muted">Advanced comprehension, confidence, and precision.</p><p><strong>Fee:</strong> Contact for pricing</p></div>
+      <div class="calc">
+        <h3 style="margin-top:0">Fee Calculator</h3>
+        <label for="level">Select level</label>
+        <select id="level" onchange="calcFee()"><option value="7999">A1 - ₹7,999</option><option value="9999">A2 - ₹9,999</option><option value="12999">B1 - ₹12,999</option><option value="15999">B2 - ₹15,999</option></select>
+        <label for="discount">Discount code</label>
+        <input id="discount" placeholder="Optional" oninput="calcFee()" />
+        <p style="font-size:1.2rem"><strong>Total:</strong> <span id="total">₹7,999</span></p>
+        <p class="note">Try code STUDENT10 for 10% off.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visa" class="pages">
+    <div class="section"><h2>Visa Counseling</h2><p class="muted">Step-by-step support for Germany study planning.</p></div>
+    <div class="grid">
+      <div class="step"><h3>1. Profile check</h3><p class="muted">Review education background, goals, and language level.</p></div>
+      <div class="step"><h3>2. Document prep</h3><p class="muted">Organize admission papers, financial proof, insurance, and APS if needed.</p></div>
+      <div class="step"><h3>3. Interview prep</h3><p class="muted">Practice common visa questions and application consistency.</p></div>
+    </div>
+    <div style="height:16px"></div>
+    <div class="card">
+      <h3>Common checklist</h3>
+      <div class="three">
+        <div><strong>Passport</strong><p class="muted">Valid and ready for travel.</p></div>
+        <div><strong>Financial proof</strong><p class="muted">Blocked account or other accepted proof.</p></div>
+        <div><strong>Admission</strong><p class="muted">University or Studienkolleg documents.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="studienkolleg" class="pages">
+    <div class="section"><h2>Studienkolleg</h2><p class="muted">Understand which course fits your future study path.</p></div>
+    <div class="card">
+      <table>
+        <thead><tr><th>Course</th><th>For</th><th>Focus</th></tr></thead>
+        <tbody>
+          <tr><td>T-Course</td><td>Technical/engineering</td><td>Maths, science, and technical subjects</td></tr>
+          <tr><td>M-Course</td><td>Medicine/life sciences</td><td>Biology, chemistry, and related subjects</td></tr>
+          <tr><td>W-Course</td><td>Business/economics</td><td>Economics, math, and social science basics</td></tr>
+          <tr><td>G-Course</td><td>Humanities</td><td>German, literature, and social subjects</td></tr>
+          <tr><td>S-Course</td><td>Languages</td><td>Language-focused preparation</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="height:16px"></div>
+    <div class="grid">
+      <div class="card"><h3>Entrance prep</h3><p class="muted">Structured practice for entrance exams and subject basics.</p></div>
+      <div class="card"><h3>Application help</h3><p class="muted">Support with documents, deadlines, and planning.</p></div>
+      <div class="card"><h3>Pathway advice</h3><p class="muted">Choose the route that fits your degree goal.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="pages">
+    <div class="section"><h2>Contact and Booking</h2><p class="muted">Submit your details to request a session.</p></div>
+    <div class="grid">
+      <div class="contact">
+        <h3>Booking form</h3>
+        <label>Name</label><input type="text" placeholder="Your full name" />
+        <label>Email</label><input type="email" placeholder="you@example.com" />
+        <label>Phone</label><input type="text" placeholder="WhatsApp number" />
+        <label>Service</label><select><option>German Classes</option><option>Visa Counseling</option><option>Studienkolleg Guidance</option><option>Full Support Package</option></select>
+        <label>Message</label><textarea placeholder="Tell us about your goal"></textarea>
+        <div class="cta"><button class="btn primary" onclick="alert('Your booking form is ready. Connect it to WhatsApp, email, or a backend next.')">Submit</button></div>
+      </div>
+      <div class="card">
+        <h3>Business details</h3>
+        <p class="muted"><strong>Brand:</strong> Gateway to Future</p>
+        <p class="muted"><strong>Location:</strong> Berlin, Germany</p>
+        <p class="muted"><strong>WhatsApp:</strong> +49 150 0000 0000</p>
+        <p class="muted"><strong>Email:</strong> info@yourdomain.com</p>
+        <p class="note">Replace these placeholders with your real details before publishing.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>© 2026 Gateway to Future. All rights reserved.</footer>
+<script>
+  function showPage(id){document.querySelectorAll('.pages').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
+  function calcFee(){let fee=parseInt(document.getElementById('level').value||'0');let code=(document.getElementById('discount').value||'').trim().toUpperCase();if(code==='STUDENT10') fee=Math.round(fee*0.9);document.getElementById('total').textContent='₹'+fee.toLocaleString('en-IN')}
+  calcFee();
+</script>
+</body>
+</html>
